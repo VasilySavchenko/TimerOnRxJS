@@ -35,9 +35,9 @@ const App = () => {
   }, []);
 
   const wait = useCallback(() => {
-    click.next(0);
+    click.next();
     setState('wait');
-    click.next(1);
+    click.next();
   }, []);
 
   useEffect(() => {
